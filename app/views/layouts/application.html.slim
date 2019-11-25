@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title
+      | Zikankanri
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    script src='https://cdn.jsdelivr.net/npm/timecircles@1.5.3/inc/TimeCircles.min.js'
+    link href='https://cdn.jsdelivr.net/npm/timecircles@1.5.3/inc/TimeCircles.css' rel='stylesheet'
+  body
+    = yield

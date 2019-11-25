@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'calendars/index'
+  get 'calendars/show'
+  get 'timers/show'
+  
 end

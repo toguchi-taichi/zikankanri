@@ -1,4 +1,3 @@
-
 //= require jquery
 //= require moment
 //= require fullcalendar
@@ -8,6 +7,8 @@
 //= require_self
 //= require calendars
 //= require timers
+//= require submits
+//= require charts
 
 
 

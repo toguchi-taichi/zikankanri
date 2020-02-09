@@ -49,6 +49,14 @@ group :development, :test do
   gem 'pry-stack_explorer' 
   gem 'fullcalendar-rails'
   gem 'momentjs-rails'
+  gem 'gon'
+  gem 'devise'
+  gem 'omniauth-twitter'
+  gem 'omniauth'
+  gem 'dotenv-rails'
+  gem 'hirb'
+  gem 'hirb-unicode'
+  gem 'devise-i18n'
 end
 
 group :development do

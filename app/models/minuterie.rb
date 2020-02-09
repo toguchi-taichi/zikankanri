@@ -1,0 +1,2 @@
+class Minuterie < ApplicationRecord
+end

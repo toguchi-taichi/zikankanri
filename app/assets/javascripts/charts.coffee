@@ -1,21 +1,20 @@
 $(document).ready ->
-  g = gon.day
-  console.log g
+  days = gon.days
   ctx = document.getElementById('mychart').getContext('2d')
   myChart = new Chart(ctx,
     type: 'bar'
     data:
-      labels: g
+      labels: days
       datasets: [ {
         label: '勉強時間'
         data: [
-          gon.counter[g[0]]
-          gon.counter[g[1]]
-          gon.counter[g[2]]
-          gon.counter[g[3]]
-          gon.counter[g[4]]
-          gon.counter[g[5]]
-          gon.counter[g[6]]
+          gon.counter[days[0]]
+          gon.counter[days[1]]
+          gon.counter[days[2]]
+          gon.counter[days[3]]
+          gon.counter[days[4]]
+          gon.counter[days[5]]
+          gon.counter[days[6]]
         ]
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)'
@@ -64,22 +63,22 @@ $(document).ready ->
     
 
 $(document).on 'turbolinks:load', ->
-  g = gon.day
+  days = gon.days
   ctx = document.getElementById('mychart').getContext('2d')
   myChart = new Chart(ctx,
     type: 'bar'
     data:
-      labels: gon.day
+      labels: days
       datasets: [ {
         label: '勉強時間'
         data: [
-          gon.counter[g[0]]
-          gon.counter[g[1]]
-          gon.counter[g[2]]
-          gon.counter[g[3]]
-          gon.counter[g[4]]
-          gon.counter[g[5]]
-          gon.counter[g[6]]
+          gon.counter[days[0]]
+          gon.counter[days[1]]
+          gon.counter[days[2]]
+          gon.counter[days[3]]
+          gon.counter[days[4]]
+          gon.counter[days[5]]
+          gon.counter[days[6]]
         ]
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)'

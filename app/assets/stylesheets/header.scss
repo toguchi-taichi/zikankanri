@@ -1,0 +1,25 @@
+header{
+    nav{
+      height:60px; 
+      background-color:#CCFFFF;
+      line-height:60px;
+      strong{
+        .user_name{
+          color:white;
+          font-size:20px;
+          margin-left:20px;
+        }
+      }
+      .profile_henkou{
+        color:white;
+        font-size:20px;
+        margin-left:40px;
+      }
+      .logout{
+        color:white;
+        font-size:20px;
+        margin-left:60px;
+      }
+      
+    }
+}

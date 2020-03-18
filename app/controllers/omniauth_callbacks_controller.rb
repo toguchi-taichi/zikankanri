@@ -2,16 +2,22 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     def twitter
         @user = User.from_omniauth(request.env["omniauth.auth"].except("extra"))
         if @user.persisted?
-            sign_in_and_redirect root_path
+          sign_in_and_redirect @user
         else
-            session["devise.user_attributes"] = @user.attributes
-            redirect_to new_user_registration_url
+          @user.skip_confirmation!
+          @user.save!
+          sign_in_and_redirect @user
         end
-        logger.debug @user.errors.inspect
+        
         
     end
     
-    def after_sign_in_path_for(resource)
-        calendars_path
+    def after_inactive_sign_up_path_for(resource)
+      calendars_path
     end
+    
+    def after_sign_in_path_for(resource)
+      calendars_path
+    end
+    
 end

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  root 'pages#index'
+  get 'practice/index'
+  root 'calendars#index'
   get 'pages/show'
+  get 'events', to: 'event#events'
+  get 'events/index', to: 'event#index'
   devise_for :users, controllers: { 
     :omniauth_callbacks => 'omniauth_callbacks', 
     :sessions => 'users/sessions',

@@ -5,9 +5,10 @@
 //= require activestorage
 //= require turbolinks
 //= require_self
-//= require calendars
 //= require timers
-//= require submits
+//= require calendars
+//= require wow
+//= require event
 //= require charts
 
 

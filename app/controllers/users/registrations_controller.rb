@@ -13,7 +13,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def create
     @user = User.new(user_params)
     @user.save!
-    redirect_to root_path
+    redirect_to calendars_path
   end
 
   # GET /resource/edit
@@ -65,7 +65,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   private
   
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
   end  
+  
+  
   
 end

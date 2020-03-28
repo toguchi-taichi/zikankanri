@@ -13,4 +13,12 @@ class Calendar < ApplicationRecord
       i = o.map {|e, f| [e, f.divmod(3600)]}.to_h
       i.map{|l, (r, w)| [l, r + w / 3600.to_f.ceil(1)]}.to_h
     end
+    
+    def self.month_data
+      now = Date.today
+      month_first_day = now.beginning_of_month
+      month_last_day = now.end_of_month
+      month_all_day = (month_first_day.strftime('%Y-%m-%d'))..(month_last_day.strftime('%Y-%m-%d'))
+      month_all_day_to_array = month_all_day.to_a
+    end
 end

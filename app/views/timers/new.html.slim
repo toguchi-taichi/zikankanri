@@ -1,14 +1,13 @@
-.container-fluid
-   = form_with(model: @timer, class: 'timer_form', id: 'tmer') do |form|
-    = form.text_field :counter, id: 'timer', value: '00:00:00'
-    = form.date_field :day, id: 'day', value: Time.now.strftime("%Y-%m-%d")
-    = button_tag 'スタート', name: 'start_buton', class: 'btn btn-success start', type: 'button'    
-    = button_tag 'ストップ', name: 'stop_button', class: 'btn btn-success stop', type: 'button'
-    = button_tag 'リスタート', type: 'button', name: 'restart_button', class: 'btn btn-success restart'
-    = button_tag 'リセット', type: 'button', name: 'reset_button', class: 'btn btn-success reset'
-    = button_to '完了'
+= form_with(model: @timer, class: 'timer_form', id: 'tmer') do |form|
+  = form.text_field :counter, id: 'timer', value: '00:00:00'
+  = form.date_field :day, id: 'day', value: Time.now.strftime("%Y-%m-%d")
+  = button_tag 'スタート', name: 'start_buton', class: 'btn btn-success start', type: 'button'    
+  = button_tag 'ストップ', name: 'stop_button', class: 'btn btn-success stop', type: 'button'
+  = button_tag 'リスタート', type: 'button', name: 'restart_button', class: 'btn btn-success restart'
+  = button_tag 'リセット', type: 'button', name: 'reset_button', class: 'btn btn-success reset'
+  = button_to '完了'
    
-= link_to 'カレンダーへ', calendars_path
 
-
+button type='button' id='button' 画面切り替え
+button type='button' id='button2' 画面切り替え
 

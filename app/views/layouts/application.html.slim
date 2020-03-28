@@ -27,13 +27,13 @@ html
             = link_to current_user.name + 'さんようこそ！', pages_show_path, class: 'user_name'
           = link_to 'プロフィール変更', edit_user_registration_path, class: 'profile_henkou'
           = link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'logout'
+          = link_to 'ホーム', calendars_path, class: 'home'
+          = link_to '時間計測', new_timer_path, class: 'zikankeisoku'
         - else
           = link_to 'サインアップ', new_user_registration_path, class: 'sign_up'
           = link_to 'ログイン', new_user_session_path, class: 'login'
   
     = yield
     
-    footer
-      nav
-        = link_to 'ホーム', calendars_path, remote: true
-        = link_to '時間計測', new_timer_path, remote: true
+    
+            

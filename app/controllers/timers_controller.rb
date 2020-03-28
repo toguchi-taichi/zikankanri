@@ -1,6 +1,6 @@
 class TimersController < ApplicationController
   def index
-    
+    @timer = Timer.new
   end
 
   def show
@@ -15,7 +15,6 @@ class TimersController < ApplicationController
   def new
     @timer = Timer.new
     
-    render :json => @timer
   end
   
   def create
@@ -30,7 +29,6 @@ class TimersController < ApplicationController
     else
       redirect_to action: 'show', id: even_date.id, day: timer_params_to_h['day'], counter: timer_params_to_h['counter'] 
     end
-    binding.pry
   end
   
   def update

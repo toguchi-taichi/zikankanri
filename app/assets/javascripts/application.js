@@ -9,6 +9,7 @@
 //= require calendars
 //= require wow
 //= require event
+//= require ajax
 //= require charts
 
 

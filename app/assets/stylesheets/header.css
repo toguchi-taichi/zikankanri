@@ -1,0 +1,18 @@
+header nav {
+  height: 60px;
+  background-color: #CCFFFF;
+  line-height: 60px; }
+  header nav strong .user_name {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px; }
+  header nav .profile_henkou {
+    color: white;
+    font-size: 20px;
+    margin-left: 40px; }
+  header nav .logout {
+    color: white;
+    font-size: 20px;
+    margin-left: 60px; }
+
+/*# sourceMappingURL=header.css.map */

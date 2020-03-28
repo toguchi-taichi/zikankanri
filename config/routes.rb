@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  get 'partials/index'
+  get 'partials/show'
+  get 'ajax/index'
+  get 'ajax/submits', to: 'ajax#submits'
   get 'practice/index'
+  get 'timers/index', to: 'timers#index'
   root 'calendars#index'
   get 'pages/show'
   get 'events', to: 'event#events'

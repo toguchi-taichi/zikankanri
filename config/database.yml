@@ -53,3 +53,6 @@ production:
   database: zikankanri_production
   username: zikankanri
   password: <%= ENV['ZIKANKANRI_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

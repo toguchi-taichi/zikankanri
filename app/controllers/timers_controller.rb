@@ -1,6 +1,7 @@
 class TimersController < ApplicationController
   def index
     @timer = Timer.new
+   
   end
 
   def show
@@ -14,7 +15,6 @@ class TimersController < ApplicationController
   
   def new
     @timer = Timer.new
-    
   end
   
   def create

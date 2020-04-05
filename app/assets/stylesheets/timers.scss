@@ -13,60 +13,57 @@
    #day{
      
    }
-   .start{
-     text-align:center;
-     width:100px;
-     height:100px;
-     line-height: 80px;
-     border-radius: 50%;
-     border: solid 3px skyblue;
-     position:absolute;
-     top:57%;
-     left:23%;
-   }
-   .stop{
-     text-align:center;
-     width:100px;
-     height:100px;
-     line-height: 80px;
-     border-radius: 50%;
-     border: solid 3px skyblue;
-     position:absolute;
-     top:57%;
-     left:34%;
-   }
-   .restart{
-     font-size:10px;
-     text-align:center;
-     width:100px;
-     height:100px;
-     line-height: 80px;
-     border-radius: 50%;
-     border: solid 3px skyblue;
-     position:absolute;
-     top:57%;
-     left:45%;
-   }
-   .reset{
-     text-align:center;
-     width:100px;
-     height:100px;
-     line-height: 80px;
-     border-radius: 50%;
-     border: solid 3px skyblue;
-     position:absolute;
-     top:57%;
-     left:56%;
-   }
+ 
    .kanryou{
      text-align:center;
      width:100px;
      height:100px;
      line-height: 80px;
-     border-radius: 50%;
-     border: solid 3px skyblue;
      position:absolute;
      top:57%;
      left:67%;
    }
  }
+
+  .start{
+    text-align:center;
+    width:100px;
+    height:100px;
+    line-height: 80px;
+    border: solid 3px skyblue;
+    position:absolute;
+    top:57%;
+    left:23%;
+  }
+ .stop{
+    text-align:center;
+    width:100px;
+    height:100px;
+    line-height: 80px;
+    border: solid 3px skyblue;
+    position:absolute;
+    top:57%;
+    left:34%;
+  }
+     
+  .restart{
+    font-size:10px;
+    text-align:center;
+    width:100px;
+    height:100px;
+    line-height: 80px;
+    border: solid 3px skyblue;
+    position:absolute;
+    top:57%;
+    left:45%;
+  }
+  .reset{
+    text-align:center;
+    width:100px;
+    height:100px;
+    line-height: 80px;
+    border: solid 3px skyblue;
+    position:absolute;
+    top:57%;
+    left:56%;
+  }

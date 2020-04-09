@@ -86,4 +86,10 @@ group :production do
   gem 'omniauth'
   gem 'slim-rails'
   gem 'html2slim'
+  gem 'bootstrap'
+  gem 'jquery-rails'
+  gem 'fullcalendar-rails'
+  gem 'momentjs-rails'
+  gem 'gon'
+  gem 'devise-i18n'
 end

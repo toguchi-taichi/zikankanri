@@ -82,4 +82,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
   gem 'pg'
   gem 'devise'
+  gem 'omniauth-twitter'
+  gem 'omniauth'
+  gem 'slim-rails'
+  gem 'html2slim'
 end
